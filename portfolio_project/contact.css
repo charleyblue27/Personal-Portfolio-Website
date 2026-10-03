@@ -1,0 +1,124 @@
+body {
+    /* style rules */
+    color: black;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        url("https://img.magnific.com/premium-photo/modern-minimalist-web-development-workspace-with-laptop-coffee_1355276-9369.jpg?semt=ais_hybrid&w=740&q=80");
+    background-size: cover;
+    background-position: center;
+    min-height: 100px;
+    padding: 40px 10%;
+}
+
+.card {
+    color: #17324d;
+    margin: 20px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card a {
+    color: #8b1e3f;
+}
+
+.hero {
+    background-color: rgb(195, 195, 178);
+    min-height: 600px;
+    padding: 5px 1%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contact-title{
+    font-size: clamp(20px, 2.5vw, 50px);
+}
+
+.circular-pic {
+    width: clamp(150px, 30vw, 400px);
+    height: clamp(150px, 30vw, 400px);
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid black;
+}
+
+/* Psuedo class */
+
+.card a:hover {
+    color: #17324d;
+    text-decoration: underline;
+}
+
+h2 {
+    color: #17324d;
+}
+
+/* Content size */
+.page{
+    width: 90%;
+    max-width: 700px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    background-color: #17324d;
+    color: white;
+    padding: 30px 5%;
+    font-size: clamp(16px, 2.5vw, 30px);
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .circular-pic {
+        width: 200px;
+        height: 200px;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
